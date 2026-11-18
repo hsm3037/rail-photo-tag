@@ -6,7 +6,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <title>현장 사진 태그 관리</title>
 <style>
-:root{font-family:system-ui,-apple-system,"Noto Sans KR",sans-serif;color:#172033;background:#f4f6fa;font-synthesis:none}*{box-sizing:border-box}body{margin:0}header{background:#172554;color:white;padding:18px 16px 14px;position:sticky;top:0;z-index:3;box-shadow:0 2px 8px #0002}header h1{font-size:20px;margin:0 0 4px}header p{font-size:12px;margin:0;color:#dbeafe}.wrap{max-width:900px;margin:auto;padding:14px 14px 90px}.tabs{display:flex;gap:7px;overflow:auto;margin:12px 0}.tab{border:0;background:#e2e8f0;padding:10px 13px;border-radius:999px;font-weight:700;white-space:nowrap;color:#334155}.tab.active{background:#1d4ed8;color:white}.panel{display:none}.panel.active{display:block}.card{background:white;border:1px solid #e2e8f0;border-radius:15px;padding:14px;margin:10px 0;box-shadow:0 1px 3px #0f172a0a}.card h2{font-size:16px;margin:0 0 12px}.muted{color:#64748b;font-size:12px}.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.row>*{flex:1}.btn{border:0;border-radius:10px;padding:11px 13px;background:#1d4ed8;color:white;font-weight:700;cursor:pointer}.btn.secondary{background:#e2e8f0;color:#1e293b}.btn.danger{background:#fee2e2;color:#991b1b}.btn.small{padding:7px 10px;font-size:12px}.field{width:100%;border:1px solid #cbd5e1;border-radius:10px;padding:11px;background:white;font:inherit;margin:5px 0 10px}.chips{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}.tag-manage-list{display:flex;flex-direction:column;gap:7px;margin:10px 0}.tag-manage-row{display:flex;align-items:center;gap:8px;padding:7px 8px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px}.tag-manage-row .chip{flex:1;text-align:left}.tag-manage-row .btn{flex:0 0 auto}.chip{border:1px solid #bfdbfe;background:#eff6ff;color:#1e40af;border-radius:999px;padding:6px 10px;font-size:12px;cursor:pointer}.chip.selected{background:#1d4ed8;color:white;border-color:#1d4ed8}.photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.photo{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;background:white}.photo img{width:100%;aspect-ratio:4/3;object-fit:cover;background:#e2e8f0;display:block}.photo .info{padding:9px}.photo .info strong{font-size:13px;display:block;overflow-wrap:anywhere}.photo .info p{font-size:11px;color:#64748b;margin:5px 0}.check{position:absolute;top:7px;left:7px;width:20px;height:20px}.thumb{position:relative}.empty{text-align:center;padding:30px 12px;color:#64748b}.stat{display:flex;gap:10px}.stat div{background:#eff6ff;border-radius:12px;padding:12px;flex:1}.stat b{font-size:22px;display:block;color:#1d4ed8}.hidden{display:none!important}.tagline{font-size:11px;color:#475569;background:#f1f5f9;border-radius:6px;padding:3px 6px;display:inline-block;margin:2px}.notice{background:#fffbeb;border:1px solid #fde68a;color:#92400e;padding:11px;border-radius:10px;font-size:12px;line-height:1.5}.modal{position:fixed;inset:0;background:#0f172a88;display:none;align-items:flex-end;justify-content:center;z-index:9}.modal.show{display:flex}.sheet{background:white;width:100%;max-width:700px;max-height:90vh;overflow:auto;border-radius:18px 18px 0 0;padding:18px}.sheet h2{margin-top:0}.footer{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #e2e8f0;padding:9px max(12px,env(safe-area-inset-right)) calc(9px + env(safe-area-inset-bottom));font-size:11px;color:#64748b;text-align:center;z-index:2}label{font-size:13px;font-weight:650}input[type=file]{width:100%;padding:8px 0}textarea{min-height:75px;resize:vertical}@media(min-width:650px){.photo-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.modal{align-items:center}.sheet{border-radius:18px}}
+:root{font-family:system-ui,-apple-system,"Noto Sans KR",sans-serif;color:#172033;background:#f4f6fa;font-synthesis:none}*{box-sizing:border-box}body{margin:0}header{background:#172554;color:white;padding:18px 16px 14px;position:sticky;top:0;z-index:3;box-shadow:0 2px 8px #0002}header h1{font-size:20px;margin:0 0 4px}header p{font-size:12px;margin:0;color:#dbeafe}.wrap{max-width:900px;margin:auto;padding:14px 14px 90px}.tabs{display:flex;gap:7px;overflow:auto;margin:12px 0}.tab{border:0;background:#e2e8f0;padding:10px 13px;border-radius:999px;font-weight:700;white-space:nowrap;color:#334155}.tab.active{background:#1d4ed8;color:white}.panel{display:none}.panel.active{display:block}.card{background:white;border:1px solid #e2e8f0;border-radius:15px;padding:14px;margin:10px 0;box-shadow:0 1px 3px #0f172a0a}.card h2{font-size:16px;margin:0 0 12px}.muted{color:#64748b;font-size:12px}.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.row>*{flex:1}.btn{border:0;border-radius:10px;padding:11px 13px;background:#1d4ed8;color:white;font-weight:700;cursor:pointer}.btn.secondary{background:#e2e8f0;color:#1e293b}.btn.danger{background:#fee2e2;color:#991b1b}.btn.small{padding:7px 10px;font-size:12px}.field{width:100%;border:1px solid #cbd5e1;border-radius:10px;padding:11px;background:white;font:inherit;margin:5px 0 10px}.chips{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}.tag-manage-list{display:flex;flex-direction:column;gap:7px;margin:10px 0}.tag-manage-row{display:flex;align-items:center;gap:8px;padding:7px 8px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px}.tag-manage-row .chip{flex:1;text-align:left}.tag-delete-action{display:none;flex:0 0 auto;background:#fee2e2;color:#991b1b;border:0;border-radius:9px;padding:8px 10px;font-weight:700;font-size:12px}.tag-manage-row.show-action .tag-delete-action{display:block}.chip{border:1px solid #bfdbfe;background:#eff6ff;color:#1e40af;border-radius:999px;padding:6px 10px;font-size:12px;cursor:pointer}.chip.selected{background:#1d4ed8;color:white;border-color:#1d4ed8}.photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.photo{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;background:white}.photo img{width:100%;aspect-ratio:4/3;object-fit:cover;background:#e2e8f0;display:block}.photo .info{padding:9px}.photo .info strong{font-size:13px;display:block;overflow-wrap:anywhere}.photo .info p{font-size:11px;color:#64748b;margin:5px 0}.check{position:absolute;top:7px;left:7px;width:20px;height:20px}.thumb{position:relative}.empty{text-align:center;padding:30px 12px;color:#64748b}.stat{display:flex;gap:10px}.stat div{background:#eff6ff;border-radius:12px;padding:12px;flex:1}.stat b{font-size:22px;display:block;color:#1d4ed8}.hidden{display:none!important}.tagline{font-size:11px;color:#475569;background:#f1f5f9;border-radius:6px;padding:3px 6px;display:inline-block;margin:2px}.notice{background:#fffbeb;border:1px solid #fde68a;color:#92400e;padding:11px;border-radius:10px;font-size:12px;line-height:1.5}.modal{position:fixed;inset:0;background:#0f172a88;display:none;align-items:flex-end;justify-content:center;z-index:9}.modal.show{display:flex}.sheet{background:white;width:100%;max-width:700px;max-height:90vh;overflow:auto;border-radius:18px 18px 0 0;padding:18px}.sheet h2{margin-top:0}.footer{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #e2e8f0;padding:9px max(12px,env(safe-area-inset-right)) calc(9px + env(safe-area-inset-bottom));font-size:11px;color:#64748b;text-align:center;z-index:2}label{font-size:13px;font-weight:650}input[type=file]{width:100%;padding:8px 0}textarea{min-height:75px;resize:vertical}@media(min-width:650px){.photo-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.modal{align-items:center}.sheet{border-radius:18px}}
 </style></head>
 <body>
 <header><h1>현장 사진 태그 관리</h1><p>차량별 · 부위별 · 불량 유형별 사진 기록</p></header>
@@ -21,7 +21,7 @@
 <section id="add" class="panel">
 <div class="card"><h2>사진 추가</h2><label>사진 선택 (여러 장 가능)</label><input id="photoFiles" type="file" accept="image/*" multiple><div class="notice">사진과 태그는 이 기기의 브라우저 저장공간에 보관됩니다. 앱 데이터 삭제·브라우저 초기화·기기 분실에 대비해 정기적으로 백업하세요.</div><label>촬영일 / 작업일</label><input id="workDate" type="date" class="field"><label>태그 템플릿 불러오기</label><select id="templateSelect" class="field"><option value="">템플릿 선택 안 함</option></select><label>태그 선택 또는 직접 추가</label><div id="addTagChoices" class="chips"></div><div class="row"><input id="newTag" class="field" placeholder="새 태그 입력"><button id="addTagBtn" class="btn" style="flex:0 0 auto">태그 추가</button></div><label>공통 메모 (선택한 사진 모두에 적용)</label><textarea id="commonMemo" class="field" placeholder="예: 상도면 스크래치 확인"></textarea><button id="savePhotos" class="btn" style="width:100%">선택 사진 등록</button><p class="muted" id="addStatus">사진을 선택한 뒤 태그를 지정하세요.</p></div>
 </section>
-<section id="tags" class="panel"><div class="card"><h2>태그 관리</h2><p class="muted">태그를 누르면 해당 태그가 포함된 사진만 검색됩니다. 삭제하면 연결된 사진과 템플릿에서도 해당 태그만 제거되며, 사진과 메모는 유지됩니다.</p><div id="allTags" class="tag-manage-list"></div><div class="row"><input id="manageNewTag" class="field" placeholder="새 태그 이름"><button class="btn" id="manageAddTag" style="flex:0 0 auto">만들기</button></div></div></section>
+<section id="tags" class="panel"><div class="card"><h2>태그 관리</h2><p class="muted">태그를 누르면 해당 태그가 포함된 사진만 검색됩니다. 태그를 길게 누르면 ‘해당 태그 삭제’가 나타납니다. 삭제하면 연결된 사진과 템플릿에서도 해당 태그만 제거되며, 사진과 메모는 유지됩니다.</p><div id="allTags" class="tag-manage-list"></div><div class="row"><input id="manageNewTag" class="field" placeholder="새 태그 이름"><button class="btn" id="manageAddTag" style="flex:0 0 auto">만들기</button></div></div></section>
 <section id="templates" class="panel"><div class="card"><h2>태그 템플릿</h2><p class="muted">자주 쓰는 태그 조합을 저장해 다음 촬영 때 재사용하세요.</p><label>템플릿 이름</label><input id="templateName" class="field" placeholder="예: 1호차 사이드 외판 검사"><div id="templateTagChoices" class="chips"></div><button class="btn" id="saveTemplate" style="width:100%">선택 태그를 템플릿으로 저장</button><div id="templateList"></div></div></section>
 <section id="export" class="panel"><div class="card"><h2>내보내기</h2><p class="muted">검색 조건에 해당하는 사진을 기준으로 내보냅니다. 검색 조건이 없으면 전체 사진입니다.</p><button class="btn" id="exportCsv" style="width:100%;margin:4px 0">엑셀용 태그 목록 CSV 내보내기</button><button class="btn secondary" id="exportPhotos" style="width:100%;margin:4px 0">원본 사진 파일 내보내기</button><button class="btn secondary" id="backupJson" style="width:100%;margin:4px 0">전체 데이터 백업 (JSON)</button><label style="display:block;margin-top:14px">백업 파일 복원</label><input id="restoreFile" type="file" accept="application/json"><p class="muted">CSV는 엑셀에서 열 수 있습니다. 원본 사진 내보내기는 사진별 다운로드로 진행됩니다.</p></div></section>
 </div>
@@ -40,7 +40,69 @@ function esc(s=''){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt
 function switchTab(name){document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.tab===name));document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id===name));}
 document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>switchTab(b.dataset.tab));
 function chipList(el,items,set,click){el.innerHTML='';items.forEach(t=>{const b=document.createElement('button');b.className='chip'+(set.has(t)?' selected':'');b.textContent=t;b.onclick=()=>click(t);el.append(b)})}
-function renderManageTags(names){const el=$('allTags');el.innerHTML='';if(!names.length){el.innerHTML='<p class="empty">등록된 태그가 없습니다.</p>';return}names.forEach(t=>{const row=document.createElement('div');row.className='tag-manage-row';const chip=document.createElement('button');chip.className='chip';chip.textContent=t;chip.onclick=()=>{activeFilterTags.clear();activeFilterTags.add(t);$('search').value='';switchTab('photos');render()};const remove=document.createElement('button');remove.className='btn danger small';remove.textContent='삭제';remove.setAttribute('aria-label',t+' 태그 삭제');remove.onclick=()=>removeTag(t);row.append(chip,remove);el.append(row)})}
+function renderManageTags(names){
+  const el=$('allTags');
+  el.innerHTML='';
+  if(!names.length){
+    el.innerHTML='<p class="empty">등록된 태그가 없습니다.</p>';
+    return;
+  }
+  names.forEach(t=>{
+    const row=document.createElement('div');
+    row.className='tag-manage-row';
+
+    const chip=document.createElement('button');
+    chip.type='button';
+    chip.className='chip';
+    chip.textContent=t;
+    chip.setAttribute('aria-label',t+' 태그 사진 검색');
+    chip.onclick=()=>{
+      if(longPressTriggered){longPressTriggered=false;return;}
+      activeFilterTags.clear();
+      activeFilterTags.add(t);
+      $('search').value='';
+      switchTab('photos');
+      render();
+    };
+
+    const action=document.createElement('button');
+    action.type='button';
+    action.className='tag-delete-action';
+    action.textContent='해당 태그 삭제';
+    action.onclick=async()=>{
+      row.classList.remove('show-action');
+      await removeTag(t);
+    };
+
+    let pressTimer=null;
+    let longPressTriggered=false;
+    const cancelPress=()=>{
+      if(pressTimer){clearTimeout(pressTimer);pressTimer=null;}
+    };
+    chip.addEventListener('pointerdown',()=>{
+      longPressTriggered=false;
+      cancelPress();
+      pressTimer=setTimeout(()=>{
+        pressTimer=null;
+        longPressTriggered=true;
+        document.querySelectorAll('.tag-manage-row.show-action').forEach(r=>r.classList.remove('show-action'));
+        row.classList.add('show-action');
+      },550);
+    });
+    ['pointerup','pointerleave','pointercancel'].forEach(evt=>{
+      chip.addEventListener(evt,cancelPress);
+    });
+    chip.addEventListener('contextmenu',e=>{
+      e.preventDefault();
+      longPressTriggered=true;
+      document.querySelectorAll('.tag-manage-row.show-action').forEach(r=>r.classList.remove('show-action'));
+      row.classList.add('show-action');
+    });
+
+    row.append(chip,action);
+    el.append(row);
+  });
+}
 async function removeTag(name){const photoRefs=photos.filter(p=>(p.tags||[]).includes(name)).length;const templateRefs=templates.filter(t=>(t.tags||[]).includes(name)).length;const message='「'+name+'」 태그를 삭제할까요?\n\n연결된 사진 '+photoRefs+'장과 템플릿 '+templateRefs+'개에서도 이 태그가 제거됩니다.\n사진 파일과 날짜, 메모는 삭제되지 않습니다.';if(!confirm(message))return;for(const p of photos){if((p.tags||[]).includes(name)){p.tags=p.tags.filter(t=>t!==name);await put('photos',p)}}for(const t of templates){if((t.tags||[]).includes(name)){t.tags=t.tags.filter(x=>x!==name);await put('templates',t)}}await del('tags',name);[activeFilterTags,selectedAddTags,selectedTemplateTags,selectedBulkTags,selectedTags].forEach(set=>set.delete(name));await load();alert('「'+name+'」 태그를 삭제했습니다. 사진과 메모는 그대로 보존했습니다.')}
 function render(){const names=uniqueTags();$('photoCount').textContent=photos.length;$('tagCount').textContent=names.length;$('templateCount').textContent=templates.length;
 chipList($('filterTags'),names,activeFilterTags,t=>{activeFilterTags.has(t)?activeFilterTags.delete(t):activeFilterTags.add(t);render()});
